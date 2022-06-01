@@ -1,17 +1,16 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import Container from './components/Container';
 import PrivacyPolicy from './privacy-policy.mdx';
-import './styles.css'
-import Container from './Container';
+import './styles/styles.css'
 
 const App = () => {
   return (
     <Container>
-      <main>
-        <PrivacyPolicy />
-      </main>
+      <PrivacyPolicy />
     </Container>
   );
 }
 
-render(<App />, document.getElementById('app'));
+const root = createRoot(document.getElementById('app'));
+root.render(<App />);
