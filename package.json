@@ -1,0 +1,10 @@
+{
+  "name": "privacy-policy",
+  "version": "0.0.1",
+  "description": "Github page for squiggle square privacy policy",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Joe Segars <joe.segars@squigglesquare.com>",
+  "license": "ISC",
+  "private": true
+}
