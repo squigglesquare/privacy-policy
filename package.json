@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "description": "Github page for squiggle square privacy policy",
   "keywords": [],
+  "source": "src/index.html",
   "author": "Joe Segars <joe.segars@squigglesquare.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --public-url ./",
+    "clean": "rm -rf ./dist"
   },
   "dependencies": {
     "react": "^18.1.0",
